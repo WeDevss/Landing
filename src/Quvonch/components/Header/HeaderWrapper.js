@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import colorBox from "../../Styles/colors";
 const HeaderWrapper = styled.div`
     max-width:1920px;
-    // padding:0 200px;
+    padding:8px 0;
     .css-1cndkqf-MuiToolbar-root{
         max-width:1400px;
     }
@@ -19,6 +19,10 @@ const HeaderWrapper = styled.div`
         font-size: 8px;
         border-radius:3px;
         
+    }
+    .css-1083xa6-MuiTypography-root{
+        font-weight:900 !important;
+        color: ${colorBox.textColor} !important;
     }
     .css-1083xa6-MuiTypography-root>div{
             transform:translatey(-12px);
@@ -41,6 +45,8 @@ const HeaderWrapper = styled.div`
     }
     .MuiButton-containedSizeMedium{
         background:${colorBox.bgColor};
+        padding:5px 10px;
+        font-weight:bold;
         color:white !important;
         border-radius:10px;
         &:hover{
@@ -57,6 +63,8 @@ const HeaderWrapper = styled.div`
     .MuiButton-outlinedSizeMedium{
         border:1px solid ${colorBox.headerText};
                 border-radius:10px;
+                padding:5px 10px;
+        font-weight:bold;
 
         &:hover{
             border:1px solid ${colorBox.headerText};
