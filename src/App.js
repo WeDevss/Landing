@@ -1,10 +1,10 @@
 import React from 'react';
-import Doston from "./Doston";
+import Quvonch from "./Quvonch";
 
-function App(props) {
+function App() {
     return (
         <div>
-          <Doston/>
+          <Quvonch/>
         </div>
     );
 }
