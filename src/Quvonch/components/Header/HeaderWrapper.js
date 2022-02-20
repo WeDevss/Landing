@@ -3,6 +3,12 @@ import colorBox from "../../Styles/colors";
 const HeaderWrapper = styled.div`
     max-width:1920px;
     padding:8px 0;
+    position:fixed;
+    top:0;
+    width:100%;
+    background-color:rgba(255,255,255,0.8);
+    z-index:9999;
+    
     .css-1cndkqf-MuiToolbar-root{
         max-width:1400px;
     }
@@ -11,7 +17,7 @@ const HeaderWrapper = styled.div`
         color: ${colorBox.headerText} !important;
         
     }
-    .css-1083xa6-MuiTypography-root>div>span{
+    .css-1083xa6-MuiTypography-root>div>span,.css-qajuc8-MuiTypography-root>div>span{
     padding:1px 3px;
         width: 25px;
         height: 12px;
@@ -24,10 +30,10 @@ const HeaderWrapper = styled.div`
         font-weight:900 !important;
         color: ${colorBox.textColor} !important;
     }
-    .css-1083xa6-MuiTypography-root>div{
+    .css-1083xa6-MuiTypography-root>div,.css-qajuc8-MuiTypography-root>div{
             transform:translatey(-12px);
     }
-    .css-1083xa6-MuiTypography-root>div>span+span{
+    .css-1083xa6-MuiTypography-root>div>span+span,.css-qajuc8-MuiTypography-root>div>span+span{
     display:flex;
     align-items:end;
     justify-content:start;
@@ -69,6 +75,12 @@ const HeaderWrapper = styled.div`
         &:hover{
             border:1px solid ${colorBox.headerText};
         }
+    }
+    .hidden{
+        height:68.5px;
+    }
+    .css-1t6c9ts>button{
+        margin:0 20px;
     }
     
     

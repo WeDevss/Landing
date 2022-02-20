@@ -28,8 +28,8 @@ const Header = () => {
 
 
     return (
-        <Container className={"mx-auto"}>
-            <HeaderWrapper>
+        <Container>
+            <HeaderWrapper  className={"mx-auto"}>
                 <AppBar position="static">
                     <Container maxWidth="xl" className={"container mx-auto"}>
                         <Toolbar disableGutters>
@@ -83,9 +83,10 @@ const Header = () => {
                                 variant="h6"
                                 noWrap
                                 component="div"
-                                sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}
+                                className={"logo flex items-center"}
+                                sx={{mr:2, flexGrow: 1, display: { xs: 'flex', md: 'none' } }}
                             >
-                                ZONE
+                                ZONE <div><span>v1.2</span><span></span></div>
                             </Typography>
                             <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
                                 {pages.map((page) => (
@@ -117,10 +118,16 @@ const Header = () => {
                             </div>
 
                         </Toolbar>
+
                     </Container>
                 </AppBar>
+                <div className="hidden">
+
+                </div>
             </HeaderWrapper>
+
         </Container>
     );
 };
 export default Header;
+
